@@ -1,4 +1,6 @@
 {
     "id": "mysql",
-    "root_password": "fakerootpassword"
+    "root_password": "fakerootpassword",
+    "admin_password": "fakeadminpassword" 
 }
+

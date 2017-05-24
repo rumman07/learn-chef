@@ -20,3 +20,5 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # source_url 'https://github.com/<insert_org_here>/lamp'
 depends 'httpd', '~> 0.4'
 depends 'mysql', '~> 8.0'
+depends 'mysql2_chef_gem', '~> 2.0'
+depends 'database', '~> 6.1'

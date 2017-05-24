@@ -9,3 +9,4 @@ apt_update 'daily' do
 end
 
 include_recipe 'lamp::web'
+include_recipe 'lamp::database'
