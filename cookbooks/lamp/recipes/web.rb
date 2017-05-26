@@ -9,7 +9,6 @@ directory node['lamp']['web']['document_root'] do
     recursive true
 end
 
-# copies the configuration file for the site to the appropriate location
 # Add the site configuration
 httpd_config 'default' do
     source 'default.conf.erb'
@@ -21,3 +20,14 @@ httpd_service 'default' do
     action [:create, :start]
     subscribes :restart, 'httpd_config[default]'
 end
+
+# Install the mod_php5 Apache module
+httpd_module 'php5' do
+    instance 'default'
+end
+
+# Install php5-mysql
+package 'php5-mysql' do
+    action :install 
+    notifies :restart, 'httpd_service[default]'
+end 
