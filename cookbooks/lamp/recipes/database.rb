@@ -18,16 +18,6 @@ mysql_service 'default' do
     action [:create, :start]
 end
 
-#Create a mysql database
-mysql_database 'wordpress-cust01' do
-    connection(
-        :host    => '127.0.0.1',
-        :username => 'root',
-        :password => node['wordpress-cust01']['mysql']['initial_root_password']
-    )
-    action :create
-end
-
 #Install the mysql2 Ruby gem
 mysql2_chef_gem 'default' do
     action :install
