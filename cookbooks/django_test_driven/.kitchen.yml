@@ -1,9 +1,9 @@
 ---
 driver:
   name: vagrant
-  driver_config:
-  https_proxy: http://corppac.walgreens.com:8080
-  http_proxy: http://corppac.walgreens.com:8080
+ # driver_config:
+ # https_proxy: http://corppac.walgreens.com:8080
+ # http_proxy: http://corppac.walgreens.com:8080
 
 provisioner:
   name: chef_zero
