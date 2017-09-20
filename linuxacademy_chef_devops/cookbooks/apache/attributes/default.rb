@@ -2,6 +2,9 @@ default["apache"]["sites"]["rumman3"] = { "site_title" => "Rumman3s website is c
 default["apache"]["sites"]["rumman3b"] = { "site_title" => "Rumman2b website is coming soon", "port" => 80, "domain" => "rumman3b.mylabserver.com" }
 default["apache"]["sites"]["rumman4"] = { "site_title" => "rumman4 website", "port" => 80, "domain" => "rumman4.mylabserver.com" }
 
+default["author"]["name"] = "rumman"
+
+
 case node["platform"]
 when "centos"
   default["apache"]["package"] = "httpd"
