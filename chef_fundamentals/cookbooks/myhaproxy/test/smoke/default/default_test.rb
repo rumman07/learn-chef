@@ -1,6 +1,6 @@
 # # encoding: utf-8
 
-# Inspec test for recipe mychef-client::default
+# Inspec test for recipe myhaproxy::default
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at http://inspec.io/docs/reference/resources/
